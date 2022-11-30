@@ -1,0 +1,81 @@
+
+html, body {
+  overflow-x: hidden !important;
+}
+
+body {
+  padding: 100px 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Fredoka One", sans-serif;
+  background-color: aliceblue;
+  color: rgba(30, 101, 255, 0.837);
+  min-height: 100vh;
+}
+.tablo {
+  width: 21rem;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 80px auto;
+}
+.x-tab {
+  color: red;
+  margin: 0 30px 0 0;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  background-color: rgb(252, 252, 252);
+  border: 1px solid black;
+  width: 21rem;
+  margin: 20px auto;
+}
+
+.square {
+  background-color: #fff;
+  border-radius: 10%;
+  box-shadow: 0 0 15px #999;
+  width: 5rem;
+  height: 5rem;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 5rem;
+  font-family: "Fredoka One", sans-serif;
+  margin: 1rem;
+  cursor: pointer;
+  transition: .3s background ease;
+}
+.square:hover {
+  box-shadow: 0 0 20px #999;
+}
+
+.square.x {
+  color: red;
+}
+.square.o {
+  color: blue;
+}
+
+.joinGame {
+  padding: 100px 0;
+}
+
+.joinGame input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+  height: 30px;
+}
+.joinGame button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+  height: 51px;
+  cursor: pointer;
+}
